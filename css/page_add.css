@@ -1,0 +1,271 @@
+/* CSS Document */
+body{
+			
+	background: #EEB76B;
+}
+
+
+
+/*首页盒子*/
+.Page_content{
+
+	border-radius:15px;
+	width: 1400px;
+	height: 760px;
+	position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin:auto;    /*  居中实现：https://www.cnblogs.com/sapho/p/5787381.html*/
+	
+	
+	background: url("../img/page/cultural_back.jpg") ;
+	background-size: contain;		
+	filter: alpha(opacity=50);
+
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+
+}
+
+.Content1{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(248, 248, 248,0.15);
+	border-radius: 10px;
+}
+
+
+.footer {
+	height: 69px;
+	width: 100%;
+	position: absolute;	
+	bottom: 0;
+	left: 0;
+
+}
+.footer ul{
+	text-align: center;
+	height: 100%;
+	line-height: 100%;
+	margin: 0px;
+	padding: 0;
+	list-style-type:none;
+}
+
+.footer ul li{
+
+	float: left;
+	width: 33.3333333%;
+	height: 100%;
+	line-height: 100%;
+	border-radius: 10px;
+	background-color:rgb(106, 126, 252,0.6);
+	cursor: pointer;
+	font-family: 宋体;
+}
+
+.footer ul h3{
+	height: 100%;
+	line-height: 180%;
+	font-size: 36px;
+	margin: auto 0;
+}
+.footer ul li:hover{
+	background-color:rgb(106, 126, 252,0.85);
+}
+.footer ul h3:hover{
+	transform: scale(1.25);transition: all 0.45s;
+}
+
+
+#test_header{
+	width: 100%;
+	height: 10%;
+
+}
+#test_header h3{
+	margin: 0;
+	text-align: center;
+	font-family: 宋体;
+	font-size: 43px;
+	height: 100%;
+	line-height: 200%;
+	    color: rgb(226, 112, 58);
+}
+
+
+
+/*TEST*/
+.res1{
+	width:100%;
+	height: 25%;
+	line-height: 32px;
+	font-size: 26px;
+	
+	}
+.res1 h3{
+	font-size:18px;
+	}
+
+.res2{
+	width:100%;
+	height: 25%;
+	line-height: 32px;
+	font-size: 26px;
+
+	}
+.res2 h3{
+	font-size:18px;
+	}
+
+.res3{
+	width:100%;
+	height: 25%;
+	line-height: 32px;
+	font-size: 26px;
+
+	}
+.res3 h3{
+	font-size:18px;
+	}
+
+.res4{
+	width:100%;
+	height: 25%;
+	line-height: 32px;
+	font-size: 26px;
+
+	}
+.res4 h3{
+	font-size:18px;
+	}
+
+.res5{
+	width:100%;
+	height: 25%;
+	line-height: 32px;
+	font-size: 26px;
+
+	}
+.res5 h3{
+	font-size:18px;
+	}
+
+
+
+
+#small_test{
+	background-color: rgb(216, 233, 240,0.75);
+	width: 98%;
+	height: 78%;
+	border-radius: 13px;
+	margin: auto;
+}
+#small_test h3{
+	margin: 0;
+	font-size: 28px;
+}
+#small_test h4{
+	font-size: 23px;
+}
+#small_test form{
+	
+	left: 25%;
+	height: 65%;	
+}
+
+
+
+
+.test1{
+	width: 60%;
+	height: 100%;
+	margin: auto;
+}
+.test2{
+	width: 60%;
+	height: 100%;
+	margin: auto;
+
+}
+.test3{
+	width: 60%;
+	height: 100%;
+	margin: auto;
+
+}
+.test4{
+	display: none;
+	width: 60%;
+	height: 100%;
+	margin: auto;
+	
+}
+.test5{
+	width: 60%;
+	height: 100%;
+	margin: auto;
+
+}
+
+
+
+
+#change{
+	height: 10%;
+	width: 100%;
+}
+#change ul{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+#change li{
+	float: left;
+	height: 100%;
+	line-height: 300%;
+	width: 49.5%;
+	font-size: 19px;
+	list-style-type:none;
+	text-align: center;
+	border-radius: 13px;
+	
+
+}
+#change h4{
+	margin: 0;
+	color: red;
+}
+
+
+
+
+#change li:hover{
+	background-color:rgb(106, 126, 252,0.2);
+	border-radius: 13px;
+}
+#change ul h4:hover{
+	transform: scale(1.25);transition: all 0.45s;
+}
+
+
+
+
+
+
+
+
+
+/*游戏区*/
+#small_game{
+	background-color: rgb(216, 233, 240,0.75);
+	width: 98%;
+	height: 78%;
+	border-radius: 13px;
+	margin: auto;
+}
+

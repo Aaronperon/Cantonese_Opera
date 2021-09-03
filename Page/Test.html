@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小测验</title>
+<link rel="stylesheet" href="../css/page_add.css" type=""> 
+<style>
+
+</style>
+
+
+<script  type="text/javascript">
+	
+
+
+	var result1='C';
+	var result2='D';
+	var result3='A';
+	var result4='B';
+	var result5='C';
+
+	function check1(){
+		var obj = document.getElementsByName("practise");
+		var list = document.getElementsByClassName("test1")[0];
+    		for(var i=0; i<obj.length; i++){
+        		if(obj[i].checked){
+					if(obj[i].value==result1)
+            			list.getElementsByClassName("res1")[0].innerHTML = "<h3>回答正确！</h3>";
+					else
+						list.getElementsByClassName("res1")[0].innerHTML = "<h3>回答错误！</h3><h4>&nbsp;&nbsp;&nbsp;&nbsp;正确的答案应该是C选项。2009年10月2日，由广东、香港和澳门联合申报，粤剧被列为联合国教科文组织人类非物质文化遗产代表作名录</h4>";
+					}
+    		}				
+	}
+
+	function check2(){
+		var obj = document.getElementsByName("practise");
+		var list = document.getElementsByClassName("test2")[0];
+    		for(var i=0; i<obj.length; i++){
+        		if(obj[i].checked){
+					if(obj[i].value==result2)
+            			list.getElementsByClassName("res2")[0].innerHTML = "<h3>回答正确！</h3>";
+					else
+						list.getElementsByClassName("res2")[0].innerHTML = "回答错误！<h4>&nbsp;&nbsp;&nbsp;&nbsp;正确的答案应该是C选项，他们分别是红线女、罗家宝、欧小胡 、丁凡 、陈剑声 、林国光 、冯杏元等七人。</h4>";
+					}
+    		}				
+	}
+
+	function check3(){
+		var obj = document.getElementsByName("practise");
+		var list = document.getElementsByClassName("test3")[0];
+    		for(var i=0; i<obj.length; i++){
+        		if(obj[i].checked){
+					if(obj[i].value==result3)
+            			list.getElementsByClassName("res3")[0].innerHTML = "<h3>回答正确！</h3>";
+					else
+						list.getElementsByClassName("res3")[0].innerHTML = "回答错误！<h4>&nbsp;&nbsp;&nbsp;&nbsp;正确的答案应该是A选项,1912年前后。</h4>";
+					}
+    		}				
+	}
+
+	function check4(){
+		var obj = document.getElementsByName("practise");
+		var list = document.getElementsByClassName("test4")[0];
+    		for(var i=0; i<obj.length; i++){
+        		if(obj[i].checked){
+					if(obj[i].value==result4)
+            			list.getElementsByClassName("res4")[0].innerHTML = "<h3>回答正确！</h3>";
+					else
+						list.getElementsByClassName("res4")[0].innerHTML = "回答错误！<h4>&nbsp;&nbsp;&nbsp;&nbsp;正确的答案应该是B项。粤港澳三地政府由2003年开始，将每年十一月最后的一个星期日定为“粤剧日”，藉以扩阔观众层面，达到推广及保存粤剧的目的。</h4>";
+					}
+    		}				
+	}
+	function check5(){
+		var obj = document.getElementsByName("practise");
+		var list = document.getElementsByClassName("test5")[0];
+    		for(var i=0; i<obj.length; i++){
+        		if(obj[i].checked){
+					if(obj[i].value==result5)
+            			list.getElementsByClassName("res5")[0].innerHTML = "<h3>回答正确！</h3>";
+					else
+						list.getElementsByClassName("res5")[0].innerHTML = "回答错误！<h4>&nbsp;&nbsp;&nbsp;&nbsp;正确的答案应该是C选项。咸丰二年（1852年)广东有名为“鸿福堂”(译音)的剧团,在美国旧金山演出《六国大封相》。</h4>";
+					}
+    		}				
+	}
+
+
+	function show1(){
+
+
+        document.getElementsByClassName("test1")[0].style.display="block";
+        document.getElementsByClassName("test2")[0].style.display="none";
+        document.getElementsByClassName("test3")[0].style.display="none";
+        document.getElementsByClassName("test4")[0].style.display="none";
+        document.getElementsByClassName("test5")[0].style.display="none";
+	}
+
+	function show2(){
+        document.getElementsByClassName("test2")[0].style.display="block";
+        document.getElementsByClassName("test1")[0].style.display="none";
+        document.getElementsByClassName("test3")[0].style.display="none";
+        document.getElementsByClassName("test4")[0].style.display="none";
+        document.getElementsByClassName("test5")[0].style.display="none";
+	}
+
+	function show3(){
+        document.getElementsByClassName("test3")[0].style.display="block";
+        document.getElementsByClassName("test1")[0].style.display="none";
+        document.getElementsByClassName("test2")[0].style.display="none";
+        document.getElementsByClassName("test4")[0].style.display="none";
+        document.getElementsByClassName("test5")[0].style.display="none";
+	}
+
+	function show4(){
+        document.getElementsByClassName("test4")[0].style.display="block";
+        document.getElementsByClassName("test1")[0].style.display="none";
+        document.getElementsByClassName("test2")[0].style.display="none";
+        document.getElementsByClassName("test3")[0].style.display="none";
+        document.getElementsByClassName("test5")[0].style.display="none";
+	}
+
+	function show5(){
+        document.getElementsByClassName("test5")[0].style.display="block";
+        document.getElementsByClassName("test1")[0].style.display="none";
+        document.getElementsByClassName("test2")[0].style.display="none";
+        document.getElementsByClassName("test3")[0].style.display="none";
+        document.getElementsByClassName("test4")[0].style.display="none";
+	}
+
+
+
+
+
+
+
+
+
+</script>	  
+</head>
+<body >
+    <div class="Page_content">
+		<div class="Content1">
+			<div id="test_header">
+				<h3>课后小测验</h3>
+			</div>
+			<div id="small_test">
+				<div class="test1"  >
+					<form>
+						<h3>【选择题】  1、粤剧在哪一天被列为联合国教科文组织人类非物质文化遗产代表作名录?（ ）</h3>
+						<h4><input type="radio" name="practise" value="A">A.&nbsp;&nbsp;2010年9月2日</h4>
+						<h4><input type="radio" name="practise" value="B">B.&nbsp;&nbsp;2010年10月2日</h4>
+						<h4><input type="radio" name="practise" value="C">C.&nbsp;&nbsp;2009年10月2日</h4>
+						<h4><input type="radio" name="practise" value="D">D.&nbsp;&nbsp;2009年9月2日</h4>
+						<h4><input type="button" class="butt3" onclick="check1()" value="提交"></h4>
+					</form>
+					<div class="res1"></div>
+					<div id="change">
+						<ul>
+							<li ><h4>咳咳这是第一道题</h4></li>
+							<li onclick="show2()"><h4>下一题</h4></li>
+						</ul>
+					</div>
+    			</div>
+
+
+    			<div class="test2"  style="display:none;">
+					<form>
+						<h3>【选择题】  2、粤剧有过多少位国家级粤剧传承人?（ ）</h3>
+						<h4><input type="radio" name="practise" value="A">A.&nbsp;&nbsp;4</h4>
+						<h4><input type="radio" name="practise" value="B">B.&nbsp;&nbsp;5</h4>
+						<h4><input type="radio" name="practise" value="C">C.&nbsp;&nbsp;6</h4>
+						<h4><input type="radio" name="practise" value="D">D.&nbsp;&nbsp;7</h4>
+						<h4><input type="button" class="butt3" onclick="check2()" value="提交"></h4>
+					</form>
+					<div class="res2"></div>
+					<div id="change">
+						<ul>
+							<li onclick="show1()"><h4>上一题</h4></li>
+							<li onclick="show3()"><h4>下一题</h4></li>
+						</ul>
+					</div>
+    			</div>
+
+
+    			<div class="test3"  style="display:none;">
+					<form>
+						<h3>【选择题】  3、粤剧演出基本上改用广州方言是在哪一年?（ ）</h3>
+						<h4><input type="radio" name="practise" value="A">A.&nbsp;&nbsp;1912年前后</h4>
+						<h4><input type="radio" name="practise" value="B">B.&nbsp;&nbsp;2012年前后</h4>
+						<h4><input type="radio" name="practise" value="C">C.&nbsp;&nbsp;1911年前后</h4>
+						<h4><input type="radio" name="practise" value="D">D.&nbsp;&nbsp;2012年前后</h4>
+						<h4><input type="button" class="butt3" onclick="check3()" value="提交"></h4>
+					</form>
+					<div class="res3"></div>
+					<div id="change">
+						<ul>
+							<li onclick="show2()"><h4>上一题</h4></li>
+							<li onclick="show4()"><h4>下一题</h4></li>
+						</ul>
+					</div>
+    			</div>
+
+
+    			<div class="test4"  style="display:none;">
+					<form>
+						<h3>【选择题】  4、粤港澳三地政府规定，每年的哪一天为“粤剧日”?（ ）</h3>
+						<h4><input type="radio" name="practise" value="A">A.&nbsp;&nbsp;每年11月最后的一个星期六</h4>
+						<h4><input type="radio" name="practise" value="B">B.&nbsp;&nbsp;每年11月最后的一个星期日</h4>
+						<h4><input type="radio" name="practise" value="C">C.&nbsp;&nbsp;每年12月最后的一个星期六</h4>
+						<h4><input type="radio" name="practise" value="D">D.&nbsp;&nbsp;每年12月最后的一个星期日</h4>
+						<h4><input type="button" class="butt3" onclick="check4()" value="提交"></h4>
+					</form>
+					<div class="res4"></div>
+					<div id="change">
+						<ul>
+							<li onclick="show3()"><h4>上一题</h4></li>
+							<li onclick="show5()"><h4>下一题</h4></li>
+						</ul>
+					</div>
+    			</div>
+
+
+    			<div class="test5"  style="display:none;">
+					<form>
+						<h3>【选择题】  5、1852年，一个名叫____的粤剧剧团到美国旧金山，为开掘金矿的粤籍华工演出?（ ）</h3>
+						<h4><input type="radio" name="practise" value="A">A.&nbsp;&nbsp;慎和堂</h4>
+						<h4><input type="radio" name="practise" value="B">B.&nbsp;&nbsp;銮舆堂</h4>
+						<h4><input type="radio" name="practise" value="C">C.&nbsp;&nbsp;鸿福堂</h4>
+						<h4><input type="radio" name="practise" value="D">D.&nbsp;&nbsp;普福堂</h4>
+						<h4><input type="button" class="butt3" onclick="check5()" value="提交"></h4>
+					</form>
+					<div class="res5"></div>
+					<div id="change">
+						<ul>
+							<li onclick="show4()"><h4>上一题</h4></li>
+							<li ><h4>这是最后一题</h4></li>
+						</ul>
+					</div>
+    			</div>
+			</div>
+
+				
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="footer">
+				<ul >
+					<li id="footer_li1"  onclick="window.open('Page_Menu.html','_self')">
+						<h3>返回上级菜单</h3>
+					</li>
+
+					<li id="footer_li2"  onclick="window.open('Test.html','_self')">
+						<h3>小测验</h3>
+					</li>
+					<li id="footer_li3"  onclick="window.open('Game.html','_self')">
+						<h3>小游戏</h3>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html> 

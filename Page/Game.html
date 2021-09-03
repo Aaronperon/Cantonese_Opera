@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小游戏</title>
+<link rel="stylesheet" href="../css/page_add.css" type=""> 
+<style>
+
+		#ps{
+			position: absolute;
+			width: 25%;
+			top: 35%;
+			left: 5%;
+			font-size: 25px;
+			font-family: 楷体;
+		}
+		#puzzle{
+			/* 取消图片之间的距离 */
+			 font-size: 0;
+			width: 588px;
+			height: 588px;
+			position: absolute;
+			left: 35%;
+		
+		}
+        .box{
+			float: left;
+		}
+		.box img{
+			width: 196px;
+			height: 196px;
+		}
+    </style>
+<script type="text/javascript">
+	
+	
+</script>	  
+</head>
+<body >
+    <div class="Page_content">
+		<div class="Content1">
+			<div id="test_header">
+				<h3>娱乐小游戏</h3>
+			</div>
+			<div id="small_game">
+				<div id="ps"><h4>请将图片拼凑完成（刷新即可重新开始）</h4></div>
+				<div id="puzzle">
+					<div class="box"><img></div>
+					<div class="box"><img></div>
+					<div class="box"><img></div>
+					<div class="box"><img></div>
+					<div class="box"><img></div>
+					<div class="box"><img></div>
+					<div class="box"><img></div>
+					<div class="box"><img></div>
+					<div class="box"><img></div>
+				</div>
+			</div>
+
+			<div class="footer">
+				<ul >
+					<li id="footer_li1"  onclick="window.open('Page_Menu.html','_self')">
+						<h3>返回上级菜单</h3>
+					</li>
+
+					<li id="footer_li2"  onclick="window.open('Test.html','_self')">
+						<h3>小测验</h3>
+					</li>
+					<li id="footer_li3"  onclick="window.open('Game.html','_self')">
+						<h3>小游戏</h3>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+<script>
+	// 获取对象
+	var image=document.getElementsByTagName('img');
+	var box=document.getElementsByClassName('box');
+	var source="";
+	var nowimage;
+	var nowimagebox;
+	var targetimage;
+	// 声明数组，随机放置图片
+	var arr=[];
+	// 循环9次调用getx方法，（9个不同的随机数）
+	for(var i=0;i<9;i++){
+		getx(arr);
+	}
+	
+	// 随机放置图片
+	for(let i=0;i<arr.length;i++){
+		// 图片路径+arr[i]+随机数，9张图片位置随机放置
+		source="../img/pintu/0"+arr[i]+".jpg";
+		//添加图片位置属性
+		image[i].setAttribute("src",source);
+		
+		//拖拽
+		image[i].onmousedown=function(){
+			// 保留被拖拽的图片
+			nowimage=this;
+			// 保留被拖拽的图片容器，，他的父节点
+			nowimagebox=this.parentNode;
+		} 
+		
+		// 取消在默认容器里的默认行为
+		box[i].ondragover=function (e){
+			e.preventDefault();
+		}
+		
+		// 拖拽文件到目标文件松开鼠标时
+		box[i].ondrop=function(){
+			// 获取当前容器的子元素
+			targetimage=box[i].childNodes[0];
+			//给当前容易添加元素
+			box[i].appendChild(nowimage);
+			//把当前容器的子元素添加到拖拽的容器中
+			nowimagebox.appendChild(targetimage);
+		}
+	}
+	
+	
+	// 产生随机数的数组 1-9,(不重复的随机数),
+	function getx(arr){
+		for(var i=0;i>-1;i++){
+			var flag=true;//标志
+			// 生成随机数  1-9
+			var num=Math.floor(Math.random()*9)+1;
+			for(var i in arr){
+				if(arr[i]==num){
+					var flag=false;
+					break;
+				}
+			}
+			//若flag==true则表明没有相等的，把这个随机数添加到数组中
+			if(flag==true){
+				arr.push(num);
+				return;
+			}
+		}
+	}
+	// 调用
+	console.log(arr);
+</script>
+</body>
+</html> 
